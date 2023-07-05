@@ -1,14 +1,14 @@
 import { FlatList } from 'react-native';
 import { Avatar, ListItem } from 'react-native-elements';
 
-const DirectoryScreen = ({ attractions }) => {
-  const renderDirectoryItem = ({ item: attractions }) => {
+const DirectoryScreen = (props) => {
+  const renderDirectoryItem = ({ item: attraction }) => {
     return (
-      <ListItem>
-        <Avatar source={attractions.image} rounded />
+      <ListItem onPress={() => props.onPress(attraction.id)}>
+        <Avatar source={attraction.image} rounded />
         <ListItem.Content>
-          <ListItem.Title>{attractions.name}</ListItem.Title>
-          <ListItem.Subtitle>{attractions.description}</ListItem.Subtitle>
+          <ListItem.Title>{attraction.name}</ListItem.Title>
+          <ListItem.Subtitle>{attraction.description}</ListItem.Subtitle>
         </ListItem.Content>
       </ListItem>
     );
@@ -16,7 +16,7 @@ const DirectoryScreen = ({ attractions }) => {
 
   return (
     <FlatList
-      data={attractions}
+      data={props.attractions}
       renderItem={renderDirectoryItem}
       keyExtractor={(item) => item.id.toString()}
     />
