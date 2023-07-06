@@ -22,10 +22,9 @@ export default RenderAttraction;
 
 const styles = StyleSheet.create({
   nameContainer: {
-    position: 'absolute',
-    top: '40%',
-    alignSelf: 'center',
-    backgroundColor: '#dfdddd94',
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#dfdddd67',
     paddingHorizontal: 4,
     borderRadius: 4
   },
@@ -33,7 +32,9 @@ const styles = StyleSheet.create({
     color: 'black',
     fontWeight: 'bold',
     textAlign: 'center',
-    fontSize: 20
+    fontSize: 20,
+    textShadowColor: '#615f5fff',
+    textShadowRadius: 4
   },
   location: {
     margin: 4,
