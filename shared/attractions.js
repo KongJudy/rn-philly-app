@@ -6,7 +6,7 @@ export const ATTRACTIONS = [
     image: require('../assets/images/philadelphia-art-museum.jpg'),
     description:
       'The Philadelphia Art Museum is a prestigious institution with a diverse collection and stunning architecture, making it a cultural gem in the city.',
-    featured: false
+    featured: true
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ export const ATTRACTIONS = [
     image: require('../assets/images/reading-terminal.jpg'),
     description:
       'Reading Terminal Market in Philadelphia is a historic train shed turned bustling food market, offering a wide variety of vendors and eateries, and retaining its unique architectural charm.',
-    featured: true
+    featured: false
   },
   {
     id: 2,

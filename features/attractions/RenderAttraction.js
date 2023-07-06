@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
     borderRadius: 4
   },
   name: {
-    color: 'black',
+    color: '#fff',
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 20,
-    textShadowColor: '#615f5fff',
-    textShadowRadius: 4
+    textShadowColor: '#ec1d1d',
+    textShadowRadius: 10
   },
   location: {
     margin: 4,
